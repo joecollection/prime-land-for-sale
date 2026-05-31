@@ -37,13 +37,13 @@ layout: default
 
 | Plot | Location / Zone | Total Area (Rai-Ngan-Sq.w) | Total Sq.m. | Key Development Potential |
 | :---: | :--- | :---: | :---: | :--- |
-| **Plot 1** | [e.g., Beachfront Pattaya] | [e.g., 4-2-50 Rai] | [e.g., 7,400] | [e.g., Luxury Condominium / 5-Star Resort] |
-| **Plot 2** | [e.g., Sukhumvit CBD] | [e.g., 1-1-00 Rai] | [e.g., 2,000] | [e.g., High-Rise Premium Office / Residential] |
-| **Plot 3** | [e.g., Jomtien Commercial] | [e.g., 8-0-00 Rai] | [e.g., 12,800] | [e.g., Mixed-Use Retail & Lifestyle Complex] |
-| **Plot 4** | [e.g., Naklua High-End] | [e.g., 3-3-20 Rai] | [e.g., 6,080] | [e.g., Exclusive Sea-View Pool Villas] |
-| **Plot 5** | [e.g., EEC Industrial Zone] | [e.g., 50-0-00 Rai]| [e.g., 80,000] | [e.g., Logistics Hub / Modern Warehouse] |
-| **Plot 6** | [e.g., Pratamnak Hill] | [e.g., 2-1-80 Rai] | [e.g., 3,920] | [e.g., Boutique Luxury Hotel / Wellness Center] |
-
+| **Plot 1** | [Sukhumvit55 CBD] | [ 4-0-0 Rai] | [6,400] | [Mixed Use Tower, Luxury Condominium / 5-Star Hotel] |
+| **Plot 2** | [Patong Phuket CBD] | [4-0-00 Rai] | [6,400] | [Mixed Use Tower, High-Rise Premium Office / Branded Residences] |
+| **Plot 3** | [Kamala Phuket Sea & Mountain View] | [3-2-60 Rai] | [5,840] | [Luxury Hospitality,Branded Residences,Luxury Villa+Wellness Retreat] |
+| **Plot 4** | [Patong Phuket CBD] | [2-0-0 Rai] | [3,200] | [Mixed Use Tower,Branded Residences+Hotel] |
+| **Plot 5** | [Chiangmai Mountain & River View] | [38-0-00 Rai]| [60,800] | [Luxury Residential Compound,Holistic Wellness Retreat] |
+| **Plot 6** | [Patong Phuket Mountain & Sea View] | [5-0-0 Rai] | [8,000] | [ Boutique Luxury Hotel Mixed Use+Residential Compound+Wellness Retreat] |
+,
 ---
 
 ### 🔍 Detailed Plot Specifications
@@ -53,6 +53,7 @@ layout: default
 *   **Zoning Regulation:** [e.g., Red Zone / High-Density Commercial]
 *   **Frontage Width:** [e.g., 60 Meters beach frontage]
 *   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 450,000,000]</span>
+
 ![Plot 1 Image][plot1-thumb]
 
 #### 📍 Plot 2: [e.g., CBD Development Site]
@@ -60,12 +61,14 @@ layout: default
 *   **Zoning Regulation:** [e.g., Brown Zone / Far 8:1]
 *   **Key Advantage:** [e.g., 200 meters from BTS Station]
 *   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 600,000,000]</span>
+
 ![Plot 2 Image][plot2-thumb]
 
 #### 📍 Plot 3: [e.g., Major Commercial Plot]
 *   **Location:** [Specify sub-district, district, province]
 *   **Key Advantage:** [e.g., Main road access with high traffic visibility]
 *   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 320,000,000]</span>
+
 ![Plot 3 Image][plot3-thumb]
 
 #### 📍 Plot 4: [e.g., Premium Residential Site]
@@ -78,12 +81,14 @@ layout: default
 *   **Location:** [Specify sub-district, district, province]
 *   **Key Advantage:** [e.g., Direct access to highway and deep sea port]
 *   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 500,000,000]</span>
+
 ![Plot 5 Image][plot5-thumb]
 
 #### 📍 Plot 6: [e.g., Boutique Hotel Site]
 *   **Location:** [Specify sub-district, district, province]
 *   **Key Advantage:** [e.g., Surrounded by luxury high-end villa projects]
 *   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 150,000,000]</span>
+
 ![Plot 6 Image][plot6-thumb]
 
 
