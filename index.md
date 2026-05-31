@@ -46,6 +46,7 @@ layout: default
 ,
 ---
 
+
 ### 🔍 Detailed Plot Specifications
 
 #### 📍 Plot 1: [e.g., Prime Beachfront Land]
