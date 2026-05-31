@@ -37,12 +37,12 @@ layout: default
 
 | Plot | Location / Zone | Total Area (Rai-Ngan-Sq.w) | Total Sq.m. | Key Development Potential |
 | :---: | :--- | :---: | :---: | :--- |
-| **Plot 1** | [ Sukhumvit 55 CBD ] | [ 4-0-0 Rai] | [ 6,400 ] | [ Mixed Use Tower,Luxury Condominium / 5-Star Resort] |
-| **Plot 2** | [e.g., Sukhumvit CBD] | [e.g., 1-1-00 Rai] | [e.g., 2,000] | [e.g., High-Rise Premium Office / Residential] |
-| **Plot 3** | [e.g., Jomtien Commercial] | [e.g., 8-0-00 Rai] | [e.g., 12,800] | [e.g., Mixed-Use Retail & Lifestyle Complex] |
-| **Plot 4** | [e.g., Naklua High-End] | [e.g., 3-3-20 Rai] | [e.g., 6,080] | [e.g., Exclusive Sea-View Pool Villas] |
-| **Plot 5** | [e.g., EEC Industrial Zone] | [e.g., 50-0-00 Rai]| [e.g., 80,000] | [e.g., Logistics Hub / Modern Warehouse] |
-| **Plot 6** | [e.g., Pratamnak Hill] | [e.g., 2-1-80 Rai] | [e.g., 3,920] | [e.g., Boutique Luxury Hotel / Wellness Center] |
+| **Plot 1** | [ Sukhumvit 55 CBD ] | [ 4-0-00 Rai] | [ 6,400 ] | [ Mixed Use Tower,Luxury Condominium / 5-Star Resort] |
+| **Plot 2** | [ Patong CBD] | [ 4-0-00 Rai] | [ 6,400] | [e.g., High-Rise Premium Office / Residential] |
+| **Plot 3** | [ Kamala Sea View] | [ 3-2-60 Rai] | [ 5,840] | [e.g., Mixed-Use Retail & Lifestyle Complex] |
+| **Plot 4** | [ Patong CBD] | [ 2-0-00 Rai] | [ 3,200] | [e.g., Exclusive Sea-View Pool Villas] |
+| **Plot 5** | [ Chiangmai Mountain View] | [ 38-0-00 Rai]| [ 60,800] | [e.g., Logistics Hub / Modern Warehouse] |
+| **Plot 6** | [ Patong Sea View] | [ 5-0-00 Rai] | [ 8,000] | [e.g., Boutique Luxury Hotel / Wellness Center] |
 
 ---
 
