@@ -120,9 +120,7 @@ For qualified investors, please review the comprehensive analysis and project do
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
 
-*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
-
-
+*   **Property Infographic and Analysis (PDF):** [📥 Download Infographic Analysis](landpatong5rai.pdf)
 
 
 
@@ -146,10 +144,9 @@ To request the full Information Memorandum (IM), financial statements, or to sch
 
 
 ## 📑 Due Diligence & Investment Documents
-For qualified investors, please review the comprehensive analysis and project documentations below:
+For qualified investors, please review the comprehensive analysis and project documentations
 
-*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
-*   **Property Infographic (PDF):** [📥 Download Brochure](garden-cliff-analysis.pdf)
+
 
 
 
