@@ -57,40 +57,70 @@ layout: default
 
 ![Plot 1 Image][plot1-thumb]
 
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/landsukhumvit55-4rai/)
+
 #### 📍 Plot 2: [Patong CBD Development Site]
 *   **Location:** [Patong Phuket]
 *   **Zoning Regulation:** [ Red Zone / Special Commercial Zone]
 *   **Key Advantage:** [Prime Corner Plot with extensive frontage on two major road ]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 2,500,000,000]</span>
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 2,500,000,000]</span>
 
 ![Plot 2 Image][plot2-thumb]
+
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
 
 #### 📍 Plot 3: [ Premium Residential Site]
 *   **Location:** [Kamala Beach Phuket]
 *   **Key Advantage:** [Elevated land with permanent sea views]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 80,000,000]</span>
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 80,000,000]</span>
 
 ![Plot 3 Image][plot3-thumb]
 
-#### 📍 Plot 4: [ Premium CBD Residential Site]
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
+
+#### 📍 Plot 4: [ Premium CBD Commercial Site]
 *   **Location:** [Patong Phuket]
 *   **Key Advantage:** [ Prime CBD close proximity to the new Phuket Expressway]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 1,000,000,000]</span>
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 1,000,000,000]</span>
 ![Plot 4 Image][plot4-thumb]
 
-#### 📍 Plot 5: [e.g., Strategic Logistics Land]
-*   **Location:** [Specify sub-district, district, province]
-*   **Key Advantage:** [e.g., Direct access to highway and deep sea port]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 500,000,000]</span>
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
+
+#### 📍 Plot 5: [Holistic Wellness Land]
+*   **Location:** [Hang Dong Chiangmai]
+*   **Key Advantage:** [ Mountain and River View ,Big Ozone-Clean Air]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 125,000,000]</span>
 
 ![Plot 5 Image][plot5-thumb]
 
-#### 📍 Plot 6: [e.g., Boutique Hotel Site]
-*   **Location:** [Specify sub-district, district, province]
-*   **Key Advantage:** [e.g., Surrounded by luxury high-end villa projects]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 150,000,000]</span>
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
+
+#### 📍 Plot 6: [ Residential and Life Style Site]
+*   **Location:** [Patong Phuket]
+*   **Key Advantage:** [ Surrounded by luxury high-end villa projects]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 500,000,000]</span>
 
 ![Plot 6 Image][plot6-thumb]
+
+## 📑 Due Diligence & Investment Documents
+For qualified investors, please review the comprehensive analysis and project documentations below:
+
+*   **Financial & Market Report:** [🔗 Access Analysis Repo / File](https://joecollection.github.io/gardencliff-pattaya/)
 
 
 
