@@ -123,9 +123,9 @@ For qualified investors, please review the comprehensive analysis and project do
 IMAGE REFERENCES (คุณสามารถก๊อปปี้ลิงก์รูปจริงมาเปลี่ยนตรงนี้ได้เลยครับ)
 ====================================================================
 --->
-[plot1-thumb]: https://unsplash.com "Plot 1"
-[plot2-thumb]: https://unsplash.com "Plot 2"
-[plot3-thumb]: https://unsplash.com "Plot 3"
-[plot4-thumb]: https://unsplash.com "Plot 4"
-[plot5-thumb]: https://unsplash.com "Plot 5"
-[plot6-thumb]: https://unsplash.com "Plot 6"
+[plot1-thumb]: land-thonglo-4rai.jpeg "Plot 1"
+[plot2-thumb]: land-patong-4rai.jpeg "Plot 2"
+[plot3-thumb]: land-kamala-3260-rai.jpeg "Plot 3"
+[plot4-thumb]: land-patong-2rai.jpeg "Plot 4"
+[plot5-thumb]: land-cm-38-rai.jpeg "Plot 5"
+[plot6-thumb]: land-patong-5rai.jpeg "Plot 6"
