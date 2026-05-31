@@ -37,7 +37,7 @@ layout: default
 
 | Plot | Location / Zone | Total Area (Rai-Ngan-Sq.w) | Total Sq.m. | Key Development Potential |
 | :---: | :--- | :---: | :---: | :--- |
-| **Plot 1** | [e.g., Beachfront Pattaya] | [e.g., 4-2-50 Rai] | [e.g., 7,400] | [e.g., Luxury Condominium / 5-Star Resort] |
+| **Plot 1** | [Sukhumvit55 CBD] | [e.g., 4-0-0 Rai] | [6,400] | [ Mixed Use Tower,Luxury Condominium / 5-Star Resort] |
 | **Plot 2** | [e.g., Sukhumvit CBD] | [e.g., 1-1-00 Rai] | [e.g., 2,000] | [e.g., High-Rise Premium Office / Residential] |
 | **Plot 3** | [e.g., Jomtien Commercial] | [e.g., 8-0-00 Rai] | [e.g., 12,800] | [e.g., Mixed-Use Retail & Lifestyle Complex] |
 | **Plot 4** | [e.g., Naklua High-End] | [e.g., 3-3-20 Rai] | [e.g., 6,080] | [e.g., Exclusive Sea-View Pool Villas] |
