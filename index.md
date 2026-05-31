@@ -39,10 +39,10 @@ layout: default
 | :---: | :--- | :---: | :---: | :--- |
 | **Plot 1** | [ Sukhumvit 55 CBD ] | [ 4-0-00 Rai] | [ 6,400 ] | [ Mixed Use Tower,Luxury Condominium / 5-Star Resort] |
 | **Plot 2** | [ Patong CBD] | [ 4-0-00 Rai] | [ 6,400] | [Mixed Use Tower, High-Rise Premium Office / Branded Residences] |
-| **Plot 3** | [ Kamala Sea View] | [ 3-2-60 Rai] | [ 5,840] | [ Luxury Villa+Wellness Retreat,Luxury Hospitality] |
-| **Plot 4** | [ Patong CBD] | [ 2-0-00 Rai] | [ 3,200] | [e.g., Exclusive Sea-View Pool Villas] |
-| **Plot 5** | [ Chiangmai Mountain View] | [ 38-0-00 Rai]| [ 60,800] | [e.g., Logistics Hub / Modern Warehouse] |
-| **Plot 6** | [ Patong Sea View] | [ 5-0-00 Rai] | [ 8,000] | [e.g., Boutique Luxury Hotel / Wellness Center] |
+| **Plot 3** | [ Kamala Sea View] | [ 3-2-60 Rai] | [ 5,840] | [ Exclusive Sea View pool Villa+Wellness Retreat] |
+| **Plot 4** | [ Patong CBD] | [ 2-0-00 Rai] | [ 3,200] | [ Mixed Use Tower,Branded Residences+Life Style Retail] |
+| **Plot 5** | [ Chiangmai Mountain View] | [ 38-0-00 Rai]| [ 60,800] | [ Luxury Residential Compound / Holistic Wellness Retreat] |
+| **Plot 6** | [ Patong Sea View] | [ 5-0-00 Rai] | [ 8,000] | [Mixed Use Residential Compound, Boutique Luxury Hotel / Wellness Retreat] |
 
 ---
 
