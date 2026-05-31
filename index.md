@@ -52,30 +52,30 @@ layout: default
 #### 📍 Plot 1: [Sukhumvit 55 CBD Land]
 *   **Location:** [Sukhumvit 55 Thong Lo Soi 29] 
 *   **Zoning Regulation:** [ Brown Zone / FAR 8  / High-Density Residential]
-*   **Frontage Width:** [ 63 Meters beach along Sukhumvit 55 Road]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 2,560,000,000]</span>
+*   **Frontage Width:** [ 63 Meters along Sukhumvit 55 Road]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 2,560,000,000 ]</span>
 
 ![Plot 1 Image][plot1-thumb]
 
-#### 📍 Plot 2: [e.g., CBD Development Site]
-*   **Location:** [Specify sub-district, district, province]
-*   **Zoning Regulation:** [e.g., Brown Zone / Far 8:1]
-*   **Key Advantage:** [e.g., 200 meters from BTS Station]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 600,000,000]</span>
+#### 📍 Plot 2: [Patong CBD Development Site]
+*   **Location:** [Patong Phuket]
+*   **Zoning Regulation:** [ Red Zone / Special Commercial Zone]
+*   **Key Advantage:** [Prime Corner Plot with extensive frontage on two major road ]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 2,500,000,000]</span>
 
 ![Plot 2 Image][plot2-thumb]
 
-#### 📍 Plot 3: [e.g., Major Commercial Plot]
-*   **Location:** [Specify sub-district, district, province]
-*   **Key Advantage:** [e.g., Main road access with high traffic visibility]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 320,000,000]</span>
+#### 📍 Plot 3: [ Premium Residential Site]
+*   **Location:** [Kamala Beach Phuket]
+*   **Key Advantage:** [Elevated land with permanent sea views]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 80,000,000]</span>
 
 ![Plot 3 Image][plot3-thumb]
 
-#### 📍 Plot 4: [e.g., Premium Residential Site]
-*   **Location:** [Specify sub-district, district, province]
-*   **Key Advantage:** [e.g., Elevated land with permanent sea views]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 180,000,000]</span>
+#### 📍 Plot 4: [ Premium CBD Residential Site]
+*   **Location:** [Patong Phuket]
+*   **Key Advantage:** [ Prime CBD close proximity to the new Phuket Expressway]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 1,000,000,000]</span>
 ![Plot 4 Image][plot4-thumb]
 
 #### 📍 Plot 5: [e.g., Strategic Logistics Land]
