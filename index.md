@@ -49,11 +49,11 @@ layout: default
 
 ### 🔍 Detailed Plot Specifications
 
-#### 📍 Plot 1: [e.g., Prime Beachfront Land]
-*   **Location:** [Specify sub-district, district, province]
-*   **Zoning Regulation:** [e.g., Red Zone / High-Density Commercial]
-*   **Frontage Width:** [e.g., 60 Meters beach frontage]
-*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[e.g., THB 450,000,000]</span>
+#### 📍 Plot 1: [Sukhumvit 55 CBD Land]
+*   **Location:** [Sukhumvit 55 Thong Lo Soi 29] 
+*   **Zoning Regulation:** [ Brown Zone / FAR 8  / High-Density Residential]
+*   **Frontage Width:** [ 63 Meters beach along Sukhumvit 55 Road]
+*   **Asking Price:** <span style="color: #d4af37; font-weight: bold;">[ THB 2,560,000,000]</span>
 
 ![Plot 1 Image][plot1-thumb]
 
