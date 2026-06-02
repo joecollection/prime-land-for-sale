@@ -431,21 +431,24 @@
       border-color: var(--gold-border);
     }
     
-    /* ควบคุมขนาดและสัดส่วนรูปภาพ */
+    /* ── แก้ไขส่วนควบคุมสัดส่วน 9:16 ตรงนี้ครับ ── */
     .plot-image-wrapper {
       position: relative;
       width: 100%;
-      /* กำหนดความสูงให้พอดี ไม่ว่าจะแนวนอนหรือ 9:16 */
-      height: 280px; 
+      aspect-ratio: 9 / 16; /* บังคับสัดส่วนให้เป็น 9:16 พอดี */
+      background-color: var(--obsidian); /* พื้นหลังเผื่อกรณีรูปไม่เต็มขอบ */
       overflow: hidden;
       border-bottom: 1px solid var(--gold-trace);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     .plot-image-wrapper img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* ตัดส่วนเกินออกเพื่อรักษาขนาดกรอบ */
-      object-position: center; /* จัดให้อยู่ตรงกลางเสมอ */
+      object-fit: contain; /* เปลี่ยนเป็น contain เพื่อไม่ให้รูปโดนตัด */
+      object-position: center; /* จัดให้อยู่กึ่งกลางเสมอ */
       transition: transform 0.6s var(--ease-luxury);
     }
     .plot-card:hover .plot-image-wrapper img {
@@ -860,7 +863,7 @@
         
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-thonglo-4rai.jpeg" alt="Plot 1: Sukhumvit 55 CBD" onerror="this.src='https://images.unsplash.com/photo-1541881512402-fa320c2d3345?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-thonglo-4rai.jpeg" alt="Plot 1: Sukhumvit 55 CBD">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 1: Sukhumvit 55 CBD</h3>
@@ -879,7 +882,7 @@
 
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-patong-4rai.jpeg" alt="Plot 2: Patong CBD" onerror="this.src='https://images.unsplash.com/photo-1512343881477-94578b9b4a24?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-patong-4rai.jpeg" alt="Plot 2: Patong CBD">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 2: Patong CBD</h3>
@@ -898,7 +901,7 @@
 
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-kamala-3260-rai.jpeg" alt="Plot 3: Kamala Sea View" onerror="this.src='https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-kamala-3260-rai.jpeg" alt="Plot 3: Kamala Sea View">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 3: Premium Residential Site</h3>
@@ -916,7 +919,7 @@
 
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-patong-2rai.jpeg" alt="Plot 4: Patong CBD" onerror="this.src='https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-patong-2rai.jpeg" alt="Plot 4: Patong CBD">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 4: Premium CBD Commercial</h3>
@@ -934,7 +937,7 @@
 
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-cm-38-rai.jpeg" alt="Plot 5: Chiangmai" onerror="this.src='https://images.unsplash.com/photo-1549880181-59a44fc5a46f?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-cm-38-rai.jpeg" alt="Plot 5: Chiangmai">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 5: Holistic Wellness Land</h3>
@@ -952,7 +955,7 @@
 
         <div class="plot-card">
           <div class="plot-image-wrapper">
-            <img src="land-patong-5rai.jpeg" alt="Plot 6: Patong Sea View" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop';">
+            <img src="land-patong-5rai.jpeg" alt="Plot 6: Patong Sea View">
           </div>
           <div class="plot-content">
             <h3 class="plot-title">Plot 6: Residential & Lifestyle Site</h3>
