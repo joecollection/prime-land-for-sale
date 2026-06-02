@@ -59,9 +59,10 @@ layout: default
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
-
+---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landsukhumvit55-4rai/)
-
+👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landsukhumvit55-4rai.pdf)
+---
 #### 📍 Plot 2: [Patong CBD Development Site]
 *   **Location:** [Patong Phuket]
 *   **Zoning Regulation:** [ Red Zone / Special Commercial Zone]
@@ -72,9 +73,11 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
-
+---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landpatong-4rai/)
+👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landpatong4rai.pdf)
 
+---
 #### 📍 Plot 3: [ Premium Residential Site]
 *   **Location:** [Kamala Beach Phuket]
 *   **Key Advantage:** [Elevated land with permanent sea views]
@@ -85,8 +88,12 @@ For qualified investors, please review the comprehensive analysis and project do
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
 
-👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-kamala-patong-3-rai/)
+---
 
+👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-kamala-patong-3-rai/)
+👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landkamala3rai.pdf)
+
+---
 #### 📍 Plot 4: [ Premium CBD Commercial Site]
 *   **Location:** [Patong Phuket]
 *   **Key Advantage:** [ Prime CBD close proximity to the new Phuket Expressway]
@@ -95,9 +102,11 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
-
+---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-patongphuket-2rai/)
+👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landpatong2rai.pdf)
 
+---
 #### 📍 Plot 5: [Holistic Wellness Land]
 *   **Location:** [Hang Dong Chiangmai]
 *   **Key Advantage:** [ Mountain and River View ,Big Ozone-Clean Air]
@@ -108,7 +117,11 @@ For qualified investors, please review the comprehensive analysis and project do
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
 
+---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landchiangmai-38rai/)
+👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landchiangmai-38rai.pdf)
+
+---
 
 #### 📍 Plot 6: [ Residential and Life Style Site]
 *   **Location:** [Patong Phuket]
@@ -119,6 +132,9 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
+
+---
+👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landpatong-5rai/)
 
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landpatong5rai.pdf)
 
