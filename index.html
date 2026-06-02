@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOE COLLECTION | Prime Assets For Sale</title>
+    
+    <!-- นำเข้า Fonts ระดับพรีเมียม -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           CSS VARIABLES (Sovereign Black Gold Theme)
+           ========================================= */
+        :root {
+            --obsidian: #0a0a0a;
+            --obsidian-light: #161616;
+            --gold: #d4af37;
+            --gold-light: #f3d779;
+            --ivory: #fdfbf7;
+            --burgundy: #4a0404;
+            --gray-text: #8a99ad;
+            
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        /* =========================================
+           GLOBAL STYLES & MOBILE-FIRST RESET
+           ========================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--obsidian);
+            color: var(--ivory);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* =========================================
+           HERO SECTION (ส่วนหัว)
+           ========================================= */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .hero-brand {
+            font-family: var(--font-heading);
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 300;
+            color: #ffffff;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .gold-divider {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            margin: 20px auto;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(20px, 4vw, 32px);
+            font-weight: 400;
+            color: var(--gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(12px, 3vw, 15px);
+            color: var(--gray-text);
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        /* =========================================
+           RESPONSIVE TABLE (ตารางปัดซ้าย-ขวาได้)
+           ========================================= */
+        .section-title {
+            font-family: var(--font-heading);
+            color: var(--gold);
+            font-size: 28px;
+            text-align: center;
+            margin: 50px 0 20px;
+            letter-spacing: 2px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--ivory);
+            font-weight: 300;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .table-responsive-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* ให้ปัดบนมือถือได้ลื่นไหล */
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            margin-bottom: 50px;
+            background: var(--obsidian-light);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px; /* บังคับให้เกิด Scroll บนมือถือถ้าจอกว้างไม่พอ */
+        }
+
+        th, td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            font-size: 14px;
+        }
+
+        th {
+            font-family: var(--font-heading);
+            color: var(--gold);
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+
+        /* =========================================
+           GATEWAY GRID (การ์ดพอร์ตโฟลิโอ)
+           ========================================= */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background-color: var(--obsidian-light);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            border-color: var(--gold);
+        }
+
+        .card-image-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 25px 20px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            color: var(--gold);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .card-details {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .card-details li {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .card-details li strong {
+            color: var(--ivory);
+            font-weight: 600;
+        }
+
+        .price-tag {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-size: 20px;
+            color: var(--gold-light);
+            font-weight: 600;
+            margin-top: 10px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(212, 175, 55, 0.3);
+            width: 100%;
+        }
+
+        /* ปุ่มกด */
+        .card-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 12px 15px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--gold);
+            color: var(--obsidian);
+        }
+
+        .btn-solid {
+            background-color: var(--obsidian);
+            color: var(--ivory);
+            border: 1px solid #333;
+        }
+
+        .btn-solid:hover {
+            background-color: #222;
+            border-color: var(--ivory);
+        }
+
+        /* =========================================
+           CONTACT SECTION (ข้อมูลการติดต่อ)
+           ========================================= */
+        .contact-section {
+            background: linear-gradient(135deg, var(--obsidian-light) 0%, var(--obsidian) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-title {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--gold);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 15px;
+            color: var(--ivory);
+            line-height: 2;
+        }
+
+        .contact-info span {
+            color: var(--gold);
+        }
+        
+        .contact-info a {
+            color: var(--ivory);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: var(--gold);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero container">
+        <div class="hero-brand">JOE COLLECTION</div>
+        <div class="gold-divider"></div>
+        <h1 class="hero-title">Prime Assets For Sale</h1>
+        <p class="hero-subtitle">Curated Portfolio of Ultra-Luxury Hospitality & Premium Real Estate</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- SECTION: PORTFOLIO SUMMARY TABLE -->
+        <h2 class="section-title">EXCLUSIVE LAND PORTFOLIO</h2>
+        <p class="section-desc"><strong>Strategic Investment:</strong> A curated selection of 6 prime land plots ready for development. All plots feature <strong>Freehold</strong> tenure (Chanote Title Deeds) with verified zoning regulations.</p>
+
+        <div class="table-responsive-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plot</th>
+                        <th>Location / Zone</th>
+                        <th>Total Area</th>
+                        <th>Total Sq.m.</th>
+                        <th>Key Development Potential</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Plot 1</strong></td>
+                        <td>Sukhumvit 55 CBD</td>
+                        <td>4-0-00 Rai</td>
+                        <td>6,400</td>
+                        <td>Mixed Use Tower, Luxury Condominium / 5-Star Resort</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plot 2</strong></td>
+                        <td>Patong CBD</td>
+                        <td>4-0-00 Rai</td>
+                        <td>6,400</td>
+                        <td>Mixed Use Tower, High-Rise Premium Office / Branded Residences</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plot 3</strong></td>
+                        <td>Kamala Sea View</td>
+                        <td>3-2-60 Rai</td>
+                        <td>5,840</td>
+                        <td>Exclusive Sea View Pool Villa + Wellness Retreat</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plot 4</strong></td>
+                        <td>Patong CBD</td>
+                        <td>2-0-00 Rai</td>
+                        <td>3,200</td>
+                        <td>Mixed Use Tower, Branded Residences + Lifestyle Retail</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plot 5</strong></td>
+                        <td>Chiangmai Mountain View</td>
+                        <td>38-0-00 Rai</td>
+                        <td>60,800</td>
+                        <td>Luxury Residential Compound / Holistic Wellness Retreat</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plot 6</strong></td>
+                        <td>Patong Sea View</td>
+                        <td>5-0-00 Rai</td>
+                        <td>8,000</td>
+                        <td>Mixed Use Residential Compound, Boutique Luxury Hotel / Wellness Retreat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="gold-divider" style="width: 100%; opacity: 0.2; margin: 50px 0;"></div>
+        
+        <h2 class="section-title" style="margin-top: 0;">DETAILED PLOT SPECIFICATIONS</h2>
+        
+        <!-- SECTION: GATEWAY GRID (PORTFOLIO CARDS) -->
+        <div class="portfolio-grid">
+            
+            <!-- PLOT 1 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-thonglo-4rai.jpeg" alt="Sukhumvit 55 CBD Land" onerror="this.src='https://images.unsplash.com/photo-1541881512402-fa320c2d3345?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 1: Sukhumvit 55 CBD</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Sukhumvit 55 Thong Lo Soi 29</li>
+                        <li><strong>Zoning:</strong> Brown Zone / FAR 8 / High-Density Residential</li>
+                        <li><strong>Frontage:</strong> 63 Meters along Sukhumvit 55 Road</li>
+                    </ul>
+                    <div class="price-tag">THB 2,560,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/landsukhumvit55-4rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landsukhumvit55-4rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+            <!-- PLOT 2 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-patong-4rai.jpeg" alt="Patong CBD Development Site" onerror="this.src='https://images.unsplash.com/photo-1512343881477-94578b9b4a24?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 2: Patong CBD</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Patong, Phuket</li>
+                        <li><strong>Zoning:</strong> Red Zone / Special Commercial Zone</li>
+                        <li><strong>Advantage:</strong> Prime Corner Plot with extensive frontage on two major roads</li>
+                    </ul>
+                    <div class="price-tag">THB 2,500,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/landpatong-4rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landpatong4rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+            <!-- PLOT 3 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-kamala-3260-rai.jpeg" alt="Premium Residential Site Kamala" onerror="this.src='https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 3: Kamala Sea View</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Kamala Beach, Phuket</li>
+                        <li><strong>Advantage:</strong> Elevated land with permanent sea views</li>
+                    </ul>
+                    <div class="price-tag">THB 80,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/land-kamala-patong-3-rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landkamala3rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+            <!-- PLOT 4 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-patong-2rai.jpeg" alt="Premium CBD Commercial Site" onerror="this.src='https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 4: Patong Commercial</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Patong, Phuket</li>
+                        <li><strong>Advantage:</strong> Prime CBD close proximity to the new Phuket Expressway</li>
+                    </ul>
+                    <div class="price-tag">THB 1,000,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/land-patongphuket-2rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landpatong2rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+            <!-- PLOT 5 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-cm-38-rai.jpeg" alt="Holistic Wellness Land" onerror="this.src='https://images.unsplash.com/photo-1549880181-59a44fc5a46f?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 5: Holistic Wellness</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Hang Dong, Chiangmai</li>
+                        <li><strong>Advantage:</strong> Mountain and River View, Big Ozone-Clean Air</li>
+                    </ul>
+                    <div class="price-tag">THB 125,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/landchiangmai-38rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landchiangmai-38rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+            <!-- PLOT 6 -->
+            <article class="card">
+                <div class="card-image-wrapper">
+                    <img src="land-patong-5rai.jpeg" alt="Residential and Life Style Site" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop';">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">📍 Plot 6: Patong Sea View</h3>
+                    <ul class="card-details">
+                        <li><strong>Location:</strong> Patong, Phuket</li>
+                        <li><strong>Advantage:</strong> Surrounded by luxury high-end villa projects</li>
+                    </ul>
+                    <div class="price-tag">THB 500,000,000</div>
+                </div>
+                <div class="card-actions" style="padding: 0 20px 25px;">
+                    <a href="https://joecollection.github.io/landpatong-5rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
+                    <a href="landpatong5rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- SECTION: CONTACT & INQUIRIES -->
+        <section class="contact-section">
+            <h2 class="contact-title">Confidential Inquiries & Private Viewings</h2>
+            <p style="color: #ddd; margin-bottom: 20px; font-size: 14px;">To request the full Information Memorandum (IM), financial statements, or to schedule a private, confidential on-site inspection, please contact:</p>
+            
+            <div class="contact-info">
+                <p><span>Investment Relations:</span> Monthon Mahakijdumrongnukul</p>
+                <p><span>Mobile / WhatsApp:</span> <a href="tel:+66806578387">+6680-657-8387</a></p>
+                <p><span>Email:</span> <a href="mailto:joecollection.m@gmail.com">joecollection.m@gmail.com</a></p>
+                <p><span>Line ID / WeChat:</span> +6680-657-8387</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
