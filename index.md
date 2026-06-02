@@ -59,10 +59,12 @@ layout: default
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
+
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landsukhumvit55-4rai/)
 
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landsukhumvit55-4rai.pdf)
+
 ---
 #### 📍 Plot 2: [Patong CBD Development Site]
 *   **Location:** [Patong Phuket]
@@ -74,6 +76,7 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
+
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landpatong-4rai/)
 
@@ -105,6 +108,7 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ## 📑 Due Diligence & Investment Documents
 For qualified investors, please review the comprehensive analysis and project documentations below:
+
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-patongphuket-2rai/)
 
