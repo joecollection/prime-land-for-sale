@@ -1,537 +1,1038 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOE COLLECTION | Prime Assets For Sale</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Joe Collection — Prime Assets For Sale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ================================================================
+       DESIGN SYSTEM — SOVEREIGN BLACK GOLD  (Mobile-First v3)
+    ================================================================ */
+    :root {
+      --obsidian:     #0d0f14;
+      --obsidian-mid: #13161e;
+      --obsidian-hi:  #1c2030;
+      --gold-hi:      #e8c97a;
+      --gold-mid:     #c9a84c;
+      --gold-trace:   rgba(201,168,76,0.12);
+      --gold-border:  rgba(201,168,76,0.25);
+      --ivory:        #f2ede6;
+      --ivory-dim:    rgba(242,237,230,0.65);
+      --ivory-ghost:  rgba(242,237,230,0.18);
+      --white:        #ffffff;
+      --emerald-hi:   #10b981;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Montserrat', sans-serif;
+      --font-accent:  'EB Garamond', Georgia, serif;
+      --ease-luxury:  cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Spacing scale */
+      --sp-xs: 12px;
+      --sp-sm: 20px;
+      --sp-md: 32px;
+      --sp-lg: 52px;
+      --sp-xl: 72px;
+
+      /* Side padding — scales with screen */
+      --px: clamp(18px, 5vw, 48px);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--obsidian);
+      color: var(--ivory);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    /* Grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    /* ── TICKER ──────────────────────────────────────────────── */
+    .ticker-rail {
+      position: relative;
+      background: var(--obsidian-mid);
+      border-top: 1px solid var(--gold-border);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 12px 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .ticker-rail::before,
+    .ticker-rail::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 48px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .ticker-rail::before { left: 0; background: linear-gradient(to right, var(--obsidian-mid), transparent); }
+    .ticker-rail::after  { right: 0; background: linear-gradient(to left,  var(--obsidian-mid), transparent); }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker-scroll 32s linear infinite;
+    }
+    .ticker-item {
+      font-family: var(--font-body);
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: var(--emerald-hi);
+      padding: 0 48px;
+    }
+    .ticker-dot { color: var(--gold-mid); margin: 0 8px; }
+
+    @keyframes ticker-scroll {
+      0%   { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    /* ── PAGE WRAPPER ────────────────────────────────────────── */
+    .page-wrapper {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--px) var(--sp-xl);
+    }
+
+    /* ── HERO CARD — 3D EMBOSSED PREMIUM ────────────────────── */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: clamp(40px, 8vw, 72px) clamp(20px, 5vw, 56px) clamp(36px, 7vw, 60px);
+      margin: clamp(24px, 5vw, 44px) 0 0;
+      background: linear-gradient(160deg, #1a1f2e 0%, #0f1119 50%, #13161f 100%);
+      border-radius: 6px;
+      border-top: 1px solid rgba(255,255,255,0.09);
+      border-left: 1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(0,0,0,0.5);
+      border-bottom: 1px solid rgba(0,0,0,0.6);
+      box-shadow:
+        0 24px 64px rgba(0,0,0,0.75),
+        0 6px 18px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.10),
+        inset 1px 0 0 rgba(255,255,255,0.05),
+        inset 0 -3px 8px rgba(0,0,0,0.45),
+        0 0 80px rgba(201,168,76,0.06);
+    }
+
+    .hero::before, .hero::after {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      pointer-events: none;
+    }
+    .hero::before {
+      top: 14px; left: 14px;
+      border-top: 1px solid var(--gold-mid);
+      border-left: 1px solid var(--gold-mid);
+      opacity: 0.6;
+      border-radius: 1px 0 0 0;
+    }
+    .hero::after {
+      bottom: 14px; right: 14px;
+      border-bottom: 1px solid var(--gold-mid);
+      border-right: 1px solid var(--gold-mid);
+      opacity: 0.6;
+      border-radius: 0 0 1px 0;
+    }
+
+    .hero-top {
+      padding-bottom: clamp(20px, 4vw, 28px);
+      opacity: 0;
+      animation: fade-up 1s var(--ease-luxury) 0.2s forwards;
+    }
+    .hero-eyebrow {
+      font-size: clamp(8px, 1.8vw, 10px);
+      font-weight: 700;
+      letter-spacing: clamp(3.5px, 1.2vw, 5.5px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+    .hero-wordmark {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 10vw, 80px);
+      font-weight: 300;
+      letter-spacing: clamp(12px, 3.5vw, 22px);
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+      word-break: break-word;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.08), 0 -1px 0 rgba(0,0,0,0.6), 0 2px 14px rgba(0,0,0,0.5);
+    }
+
+    .hero-centre-rule {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: clamp(18px, 3.5vw, 26px) 0;
+      height: 1px;
+      opacity: 0;
+      animation: fade-up 0.8s var(--ease-luxury) 0.5s forwards;
+    }
+    .hero-centre-rule::before {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent 0%, rgba(201,168,76,0.15) 10%, rgba(201,168,76,0.55) 35%, var(--gold-mid) 50%, rgba(201,168,76,0.55) 65%, rgba(201,168,76,0.15) 90%, transparent 100%);
+    }
+    .hero-rule-jewel {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: linear-gradient(160deg, #1a1f2e 0%, #0f1119 100%);
+      padding: 0 16px;
+    }
+    .hero-rule-diamond {
+      width: 6px; height: 6px;
+      background: var(--gold-mid);
+      transform: rotate(45deg);
+      box-shadow: 0 0 7px rgba(201,168,76,0.6);
+      flex-shrink: 0;
+    }
+    .hero-rule-diamond-sm {
+      width: 3px; height: 3px;
+      background: rgba(201,168,76,0.45);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .hero-wordmark-collection {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-style: italic;
+      font-size: clamp(30px, 7vw, 56px);
+      letter-spacing: clamp(10px, 3vw, 20px);
+      color: var(--gold-hi);
+      line-height: 1;
+      word-break: break-word;
+      opacity: 0;
+      animation: fade-up 0.9s var(--ease-luxury) 0.65s forwards;
+      text-shadow: 0 1px 0 rgba(255,220,100,0.25), 0 -1px 0 rgba(0,0,0,0.5), 0 2px 18px rgba(201,168,76,0.22);
+      margin-bottom: clamp(20px, 4vw, 28px);
+    }
+
+    .hero-bottom {
+      padding-top: clamp(20px, 4vw, 30px);
+      opacity: 0;
+      animation: fade-up 0.9s var(--ease-luxury) 0.85s forwards;
+    }
+    .hero-subtitle {
+      font-family: var(--font-accent);
+      font-size: clamp(14px, 3.5vw, 17px);
+      font-style: italic;
+      color: var(--ivory-dim);
+      letter-spacing: 0.4px;
+      padding: 0 4px;
+      margin-bottom: clamp(26px, 5vw, 36px);
+      line-height: 1.6;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+      width: 100%;
+    }
+    .btn-hero-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 340px; 
+      height: 60px;     
+      padding: 0 20px;
+      font-family: var(--font-body);
+      font-size: clamp(10px, 2.5vw, 11px);
+      font-weight: 700;
+      letter-spacing: clamp(2px, 0.8vw, 3px);
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury), filter 0.3s;
+      white-space: nowrap;
+    }
+    .btn-hero-cta:hover  { transform: translateY(-4px); filter: brightness(1.1); }
+    .btn-hero-cta:active { transform: translateY(-1px); }
+
+    .btn-hero-primary {
+      color: #ffd8d8;
+      background: linear-gradient(140deg, #851c1c 0%, #5c1414 55%, #3d0a0a 100%);
+      border-top:   1px solid rgba(255,160,160,0.2);
+      border-left:  1px solid rgba(255,160,160,0.12);
+      border-right: 1px solid rgba(0,0,0,0.55);
+      border-bottom:1px solid rgba(0,0,0,0.65);
+      box-shadow: 0 6px 22px rgba(107,21,21,0.55), 0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,200,200,0.2), inset 0 -3px 6px rgba(0,0,0,0.35);
+    }
+    .btn-hero-primary:hover {
+      box-shadow: 0 14px 38px rgba(107,21,21,0.70), 0 4px 10px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,200,200,0.25);
+    }
+
+    .btn-hero-secondary {
+      color: var(--gold-hi);
+      background: linear-gradient(140deg, #21273a 0%, #141824 100%);
+      border-top:   1px solid rgba(255,255,255,0.10);
+      border-left:  1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(0,0,0,0.5);
+      border-bottom:1px solid rgba(0,0,0,0.55);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.55), 0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -3px 6px rgba(0,0,0,0.35), 0 0 0 1px var(--gold-border);
+    }
+    .btn-hero-secondary:hover {
+      box-shadow: 0 14px 38px rgba(0,0,0,0.65), inset 0 1px 0 rgba(255,255,255,0.1), 0 0 0 1px var(--gold-mid);
+    }
     
-    <!-- นำเข้า Fonts ระดับพรีเมียม -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    .btn-hero-cta svg {
+      width: 15px; 
+      height: 15px; 
+      flex-shrink: 0; 
+      margin-bottom: 2px;
+    }
 
-    <style>
-        /* =========================================
-           CSS VARIABLES (Sovereign Black Gold Theme)
-           ========================================= */
-        :root {
-            --obsidian: #0a0a0a;
-            --obsidian-light: #161616;
-            --gold: #d4af37;
-            --gold-light: #f3d779;
-            --ivory: #fdfbf7;
-            --burgundy: #4a0404;
-            --gray-text: #8a99ad;
-            
-            --font-heading: 'Cormorant Garamond', serif;
-            --font-body: 'Montserrat', sans-serif;
-        }
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-        /* =========================================
-           GLOBAL STYLES & MOBILE-FIRST RESET
-           ========================================= */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    /* ── SECTION DIVIDER ─────────────────────────────────────── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: clamp(40px, 8vw, 64px) 0 clamp(28px, 5vw, 44px);
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+    .section-divider-line {
+      flex: 1;
+      min-width: 20px;
+      height: 1px;
+    }
+    .section-divider-line:first-child { background: linear-gradient(to right, var(--gold-border), transparent); }
+    .section-divider-line:last-child  { background: linear-gradient(to left,  var(--gold-border), transparent); }
+    .section-heading {
+      font-size: clamp(7.5px, 1.8vw, 9px);
+      font-weight: 700;
+      letter-spacing: clamp(2px, 1vw, 4.5px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
 
-        body {
-            background-color: var(--obsidian);
-            color: var(--ivory);
-            font-family: var(--font-body);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
+    /* ── SECTION COPY ────────────────────────────────────────── */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 5vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .section-body {
+      font-size: clamp(13px, 3vw, 14.5px);
+      color: var(--ivory-dim);
+      line-height: 1.85;
+      margin-bottom: 32px;
+    }
+    
+    /* ── RESPONSIVE TABLE ────────────────────────────────────── */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-trace);
+      border-radius: 4px;
+      margin-bottom: clamp(30px, 5vw, 50px);
+    }
+    table {
+      width: 100%;
+      min-width: 800px; /* บังคับ scroll บนมือถือ */
+      border-collapse: collapse;
+      font-family: var(--font-body);
+      font-size: clamp(12px, 2.5vw, 14px);
+    }
+    th, td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    th {
+      font-family: var(--font-display);
+      font-size: clamp(15px, 3vw, 18px);
+      color: var(--gold-hi);
+      font-weight: 500;
+      letter-spacing: 1px;
+      background: rgba(201,168,76,0.05);
+    }
+    td {
+      color: var(--ivory-dim);
+    }
+    td strong {
+      color: var(--white);
+    }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    /* ── PORTFOLIO PLOT CARDS ────────────────────────────────── */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: 24px;
+      margin-bottom: clamp(40px, 8vw, 60px);
+    }
+    
+    .plot-card {
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-trace);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury), border-color 0.4s;
+    }
+    .plot-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+      border-color: var(--gold-border);
+    }
+    
+    /* ควบคุมขนาดและสัดส่วนรูปภาพ */
+    .plot-image-wrapper {
+      position: relative;
+      width: 100%;
+      /* กำหนดความสูงให้พอดี ไม่ว่าจะแนวนอนหรือ 9:16 */
+      height: 280px; 
+      overflow: hidden;
+      border-bottom: 1px solid var(--gold-trace);
+    }
+    
+    .plot-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* ตัดส่วนเกินออกเพื่อรักษาขนาดกรอบ */
+      object-position: center; /* จัดให้อยู่ตรงกลางเสมอ */
+      transition: transform 0.6s var(--ease-luxury);
+    }
+    .plot-card:hover .plot-image-wrapper img {
+      transform: scale(1.05);
+    }
 
-        /* =========================================
-           HERO SECTION (ส่วนหัว)
-           ========================================= */
-        .hero {
-            text-align: center;
-            padding: 60px 20px 40px;
-        }
+    .plot-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .plot-title {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 24px);
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .plot-specs {
+      list-style: none;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .plot-specs li {
+      font-size: clamp(13px, 2.5vw, 14px);
+      color: var(--ivory-dim);
+      margin-bottom: 10px;
+      line-height: 1.6;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .plot-specs li::before {
+      content: '◆';
+      color: var(--gold-mid);
+      font-size: 10px;
+      margin-top: 4px;
+    }
+    .plot-specs strong {
+      color: var(--ivory);
+    }
+    .plot-price {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 4vw, 24px);
+      color: var(--gold-hi);
+      font-weight: 600;
+      padding-top: 16px;
+      border-top: 1px dashed var(--gold-trace);
+      margin-bottom: 20px;
+    }
+    
+    .plot-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .btn-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+    .btn-action-outline {
+      background: transparent;
+      color: var(--gold-mid);
+      border: 1px solid var(--gold-border);
+    }
+    .btn-action-outline:hover {
+      background: rgba(201,168,76,0.1);
+      border-color: var(--gold-hi);
+      color: var(--gold-hi);
+    }
+    .btn-action-solid {
+      background: linear-gradient(140deg, #21273a 0%, #141824 100%);
+      color: var(--ivory);
+      border: 1px solid var(--gold-border);
+    }
+    .btn-action-solid:hover {
+      background: linear-gradient(140deg, #2a324a 0%, #1c2233 100%);
+      border-color: var(--gold-hi);
+    }
 
-        .hero-brand {
-            font-family: var(--font-heading);
-            font-size: clamp(28px, 5vw, 42px);
-            font-weight: 300;
-            color: #ffffff;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
 
-        .gold-divider {
-            width: 80px;
-            height: 1px;
-            background: linear-gradient(to right, transparent, var(--gold), transparent);
-            margin: 20px auto;
-        }
+    /* ── PROTOCOL CARDS ──────────────────────────────────────── */
+    .protocol-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 14px;
+    }
+    .protocol-card {
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-trace);
+      border-top: 2px solid var(--gold-mid);
+      border-radius: 4px;
+      padding: clamp(20px, 4vw, 28px) clamp(18px, 3.5vw, 24px);
+      transition: border-color 0.35s, box-shadow 0.35s;
+    }
+    .protocol-card:hover {
+      border-color: var(--gold-border);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+    }
+    .protocol-icon { font-size: 20px; margin-bottom: 14px; display: block; }
+    .protocol-title {
+      font-size: clamp(8.5px, 2vw, 9.5px);
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold-hi);
+      margin-bottom: 10px;
+    }
+    .protocol-body {
+      font-size: clamp(12.5px, 3vw, 13.5px);
+      color: var(--ivory-dim);
+      line-height: 1.8;
+    }
 
-        .hero-title {
-            font-family: var(--font-heading);
-            font-size: clamp(20px, 4vw, 32px);
-            font-weight: 400;
-            color: var(--gold);
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
+    /* ── CONTACT BLOCK ───────────────────────────────────────── */
+    .contact-block {
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-border);
+      border-radius: 4px;
+      padding: clamp(24px, 6vw, 44px) clamp(22px, 5vw, 44px);
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-block::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold-mid), transparent);
+    }
+    .contact-principal {
+      font-size: clamp(8.5px, 2vw, 9.5px);
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      margin-bottom: 18px;
+    }
+    .contact-name {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 5.5vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 22px;
+      letter-spacing: 0.5px;
+      word-break: break-word;
+      line-height: 1.2;
+    }
+    .contact-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: clamp(12.5px, 3.2vw, 14px);
+      color: var(--ivory-dim);
+      word-break: break-all;
+    }
+    .contact-line-icon {
+      font-size: 14px;
+      width: 20px;
+      text-align: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-line span { word-break: break-word; }
+    .contact-line a {
+      color: var(--gold-hi);
+      text-decoration: none;
+      transition: color 0.25s;
+      word-break: break-all;
+    }
+    .contact-line a:hover { color: var(--white); }
 
-        .hero-subtitle {
-            font-size: clamp(12px, 3vw, 15px);
-            color: var(--gray-text);
-            font-style: italic;
-            letter-spacing: 1px;
-        }
+    /* ── COMM BUTTONS ────────────────────────────────────────── */
+    .comms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+      gap: 12px;
+    }
+    .btn-comm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: clamp(15px, 4vw, 18px) 16px;
+      font-family: var(--font-body);
+      font-size: clamp(10px, 2.5vw, 11.5px);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--white);
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury), filter 0.35s;
+      min-height: 52px;
+    }
+    .btn-comm:hover  { transform: translateY(-3px); filter: brightness(1.12); }
+    .btn-comm:active { transform: translateY(0); }
+    .btn-comm svg    { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
 
-        /* =========================================
-           RESPONSIVE TABLE (ตารางปัดซ้าย-ขวาได้)
-           ========================================= */
-        .section-title {
-            font-family: var(--font-heading);
-            color: var(--gold);
-            font-size: 28px;
-            text-align: center;
-            margin: 50px 0 20px;
-            letter-spacing: 2px;
-        }
+    .btn-whatsapp {
+      background: linear-gradient(140deg, #1a7a47, #0f5e36);
+      border-color: rgba(26,122,71,0.4);
+      box-shadow: 0 5px 16px rgba(26,122,71,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-whatsapp:hover { box-shadow: 0 12px 30px rgba(26,122,71,0.45); }
 
-        .section-desc {
-            text-align: center;
-            color: var(--ivory);
-            font-weight: 300;
-            margin-bottom: 30px;
-            font-size: 15px;
-        }
+    .btn-gmail {
+      background: linear-gradient(140deg, #c0392b, #922b21);
+      border-color: rgba(192,57,43,0.4);
+      box-shadow: 0 5px 16px rgba(192,57,43,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-gmail:hover { box-shadow: 0 12px 30px rgba(192,57,43,0.45); }
 
-        .table-responsive-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch; /* ให้ปัดบนมือถือได้ลื่นไหล */
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 4px;
-            margin-bottom: 50px;
-            background: var(--obsidian-light);
-        }
+    .btn-line {
+      background: linear-gradient(140deg, #0a9e6e, #077a55);
+      border-color: rgba(10,158,110,0.4);
+      box-shadow: 0 5px 16px rgba(10,158,110,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-line:hover { box-shadow: 0 12px 30px rgba(10,158,110,0.45); }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 800px; /* บังคับให้เกิด Scroll บนมือถือถ้าจอกว้างไม่พอ */
-        }
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .site-footer {
+      margin-top: var(--sp-xl);
+      padding-top: var(--sp-md);
+      border-top: 1px solid var(--gold-trace);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .footer-mark {
+      font-family: var(--font-display);
+      font-size: clamp(15px, 3.5vw, 18px);
+      font-weight: 300;
+      letter-spacing: clamp(4px, 1.5vw, 6px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+    }
+    .footer-copy {
+      font-size: clamp(9px, 2vw, 10.5px);
+      letter-spacing: 1.2px;
+      color: var(--ivory-ghost);
+      text-transform: uppercase;
+      word-break: break-word;
+      padding: 0 4px;
+    }
 
-        th, td {
-            padding: 15px 20px;
-            text-align: left;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-            font-size: 14px;
-        }
+    /* ── SCROLL REVEAL ───────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.75s var(--ease-luxury), transform 0.75s var(--ease-luxury);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
-        th {
-            font-family: var(--font-heading);
-            color: var(--gold);
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background-color: rgba(212, 175, 55, 0.05);
-        }
-
-        /* =========================================
-           GATEWAY GRID (การ์ดพอร์ตโฟลิโอ)
-           ========================================= */
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .card {
-            background-color: var(--obsidian-light);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            border-radius: 6px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            border-color: var(--gold);
-        }
-
-        .card-image-wrapper {
-            width: 100%;
-            height: 220px;
-            overflow: hidden;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .card-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .card:hover .card-image-wrapper img {
-            transform: scale(1.05);
-        }
-
-        .card-content {
-            padding: 25px 20px;
-            flex-grow: 1;
-        }
-
-        .card-title {
-            font-family: var(--font-heading);
-            font-size: 22px;
-            color: var(--gold);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-
-        .card-details {
-            list-style: none;
-            margin-bottom: 25px;
-        }
-
-        .card-details li {
-            font-size: 13px;
-            margin-bottom: 10px;
-            color: #ddd;
-            line-height: 1.5;
-        }
-
-        .card-details li strong {
-            color: var(--ivory);
-            font-weight: 600;
-        }
-
-        .price-tag {
-            display: inline-block;
-            font-family: var(--font-heading);
-            font-size: 20px;
-            color: var(--gold-light);
-            font-weight: 600;
-            margin-top: 10px;
-            padding-top: 15px;
-            border-top: 1px dashed rgba(212, 175, 55, 0.3);
-            width: 100%;
-        }
-
-        /* ปุ่มกด */
-        .card-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: auto;
-        }
-
-        .btn {
-            display: block;
-            text-align: center;
-            padding: 12px 15px;
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-radius: 3px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: var(--gold);
-            border: 1px solid var(--gold);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--gold);
-            color: var(--obsidian);
-        }
-
-        .btn-solid {
-            background-color: var(--obsidian);
-            color: var(--ivory);
-            border: 1px solid #333;
-        }
-
-        .btn-solid:hover {
-            background-color: #222;
-            border-color: var(--ivory);
-        }
-
-        /* =========================================
-           CONTACT SECTION (ข้อมูลการติดต่อ)
-           ========================================= */
-        .contact-section {
-            background: linear-gradient(135deg, var(--obsidian-light) 0%, var(--obsidian) 100%);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 8px;
-            padding: 40px 20px;
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .contact-title {
-            font-family: var(--font-heading);
-            font-size: 24px;
-            color: var(--gold);
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
-        .contact-info {
-            font-size: 15px;
-            color: var(--ivory);
-            line-height: 2;
-        }
-
-        .contact-info span {
-            color: var(--gold);
-        }
-        
-        .contact-info a {
-            color: var(--ivory);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-info a:hover {
-            color: var(--gold);
-        }
-
-    </style>
+    /* ── TABLET overrides (≥ 600px) ──────────────────────────── */
+    @media (min-width: 600px) {
+      .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero container">
-        <div class="hero-brand">JOE COLLECTION</div>
-        <div class="gold-divider"></div>
-        <h1 class="hero-title">Prime Assets For Sale</h1>
-        <p class="hero-subtitle">Curated Portfolio of Ultra-Luxury Hospitality & Premium Real Estate</p>
+  <div class="ticker-rail" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Private Institutional Portfolio<span class="ticker-dot">◆</span>Off-Market Capital Divestments<span class="ticker-dot">◆</span>Strategic Acquisitions — NDA Verified<span class="ticker-dot">◆</span>Sovereign Assets Under Management<span class="ticker-dot">◆</span>Freehold Titles — Thailand<span class="ticker-dot">◆</span></span>
+      <span class="ticker-item">Private Institutional Portfolio<span class="ticker-dot">◆</span>Off-Market Capital Divestments<span class="ticker-dot">◆</span>Strategic Acquisitions — NDA Verified<span class="ticker-dot">◆</span>Sovereign Assets Under Management<span class="ticker-dot">◆</span>Freehold Titles — Thailand<span class="ticker-dot">◆</span></span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <header class="hero">
+      <div class="hero-top">
+        <p class="hero-eyebrow">Prime Assets For Sale</p>
+        <h1 class="hero-wordmark">Joe</h1>
+      </div>
+
+      <div class="hero-centre-rule">
+        <div class="hero-rule-jewel">
+          <div class="hero-rule-diamond-sm"></div>
+          <div class="hero-rule-diamond"></div>
+          <div class="hero-rule-diamond-sm"></div>
+        </div>
+      </div>
+
+      <span class="hero-wordmark-collection">Collection</span>
+
+      <div class="hero-bottom">
+        <p class="hero-subtitle">Curated Portfolio of Ultra-Luxury Hospitality &amp;<br>Premium Real Estate</p>
+        
+        <div class="hero-cta-row">
+          <a href="#portfolio" class="btn-hero-cta btn-hero-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            View Land Portfolio
+          </a>
+          <a href="#contact" class="btn-hero-cta btn-hero-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Contact Principal
+          </a>
+        </div>
+      </div>
     </header>
 
-    <main class="container">
+    <section id="portfolio" class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Strategic Investment</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title">Exclusive Land Portfolio</h2>
+      <p class="section-body" style="text-align: center;">A curated selection of 6 prime land plots ready for development. All plots feature <strong>Freehold</strong> tenure (Chanote Title Deeds) with verified zoning regulations.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Plot</th>
+              <th>Location / Zone</th>
+              <th>Total Area</th>
+              <th>Total Sq.m.</th>
+              <th>Key Development Potential</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Plot 1</strong></td>
+              <td>Sukhumvit 55 CBD</td>
+              <td>4-0-00 Rai</td>
+              <td>6,400</td>
+              <td>Mixed Use Tower, Luxury Condominium / 5-Star Resort</td>
+            </tr>
+            <tr>
+              <td><strong>Plot 2</strong></td>
+              <td>Patong CBD</td>
+              <td>4-0-00 Rai</td>
+              <td>6,400</td>
+              <td>Mixed Use Tower, High-Rise Premium Office / Branded Residences</td>
+            </tr>
+            <tr>
+              <td><strong>Plot 3</strong></td>
+              <td>Kamala Sea View</td>
+              <td>3-2-60 Rai</td>
+              <td>5,840</td>
+              <td>Exclusive Sea View Pool Villa + Wellness Retreat</td>
+            </tr>
+            <tr>
+              <td><strong>Plot 4</strong></td>
+              <td>Patong CBD</td>
+              <td>2-0-00 Rai</td>
+              <td>3,200</td>
+              <td>Mixed Use Tower, Branded Residences + Lifestyle Retail</td>
+            </tr>
+            <tr>
+              <td><strong>Plot 5</strong></td>
+              <td>Chiangmai Mountain View</td>
+              <td>38-0-00 Rai</td>
+              <td>60,800</td>
+              <td>Luxury Residential Compound / Holistic Wellness Retreat</td>
+            </tr>
+            <tr>
+              <td><strong>Plot 6</strong></td>
+              <td>Patong Sea View</td>
+              <td>5-0-00 Rai</td>
+              <td>8,000</td>
+              <td>Mixed Use Residential Compound, Boutique Luxury Hotel / Wellness Retreat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Detailed Specifications</span>
+        <div class="section-divider-line"></div>
+      </div>
+      
+      <div class="portfolio-grid">
         
-        <!-- SECTION: PORTFOLIO SUMMARY TABLE -->
-        <h2 class="section-title">EXCLUSIVE LAND PORTFOLIO</h2>
-        <p class="section-desc"><strong>Strategic Investment:</strong> A curated selection of 6 prime land plots ready for development. All plots feature <strong>Freehold</strong> tenure (Chanote Title Deeds) with verified zoning regulations.</p>
-
-        <div class="table-responsive-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Plot</th>
-                        <th>Location / Zone</th>
-                        <th>Total Area</th>
-                        <th>Total Sq.m.</th>
-                        <th>Key Development Potential</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Plot 1</strong></td>
-                        <td>Sukhumvit 55 CBD</td>
-                        <td>4-0-00 Rai</td>
-                        <td>6,400</td>
-                        <td>Mixed Use Tower, Luxury Condominium / 5-Star Resort</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plot 2</strong></td>
-                        <td>Patong CBD</td>
-                        <td>4-0-00 Rai</td>
-                        <td>6,400</td>
-                        <td>Mixed Use Tower, High-Rise Premium Office / Branded Residences</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plot 3</strong></td>
-                        <td>Kamala Sea View</td>
-                        <td>3-2-60 Rai</td>
-                        <td>5,840</td>
-                        <td>Exclusive Sea View Pool Villa + Wellness Retreat</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plot 4</strong></td>
-                        <td>Patong CBD</td>
-                        <td>2-0-00 Rai</td>
-                        <td>3,200</td>
-                        <td>Mixed Use Tower, Branded Residences + Lifestyle Retail</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plot 5</strong></td>
-                        <td>Chiangmai Mountain View</td>
-                        <td>38-0-00 Rai</td>
-                        <td>60,800</td>
-                        <td>Luxury Residential Compound / Holistic Wellness Retreat</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plot 6</strong></td>
-                        <td>Patong Sea View</td>
-                        <td>5-0-00 Rai</td>
-                        <td>8,000</td>
-                        <td>Mixed Use Residential Compound, Boutique Luxury Hotel / Wellness Retreat</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="gold-divider" style="width: 100%; opacity: 0.2; margin: 50px 0;"></div>
-        
-        <h2 class="section-title" style="margin-top: 0;">DETAILED PLOT SPECIFICATIONS</h2>
-        
-        <!-- SECTION: GATEWAY GRID (PORTFOLIO CARDS) -->
-        <div class="portfolio-grid">
-            
-            <!-- PLOT 1 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-thonglo-4rai.jpeg" alt="Sukhumvit 55 CBD Land" onerror="this.src='https://images.unsplash.com/photo-1541881512402-fa320c2d3345?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 1: Sukhumvit 55 CBD</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Sukhumvit 55 Thong Lo Soi 29</li>
-                        <li><strong>Zoning:</strong> Brown Zone / FAR 8 / High-Density Residential</li>
-                        <li><strong>Frontage:</strong> 63 Meters along Sukhumvit 55 Road</li>
-                    </ul>
-                    <div class="price-tag">THB 2,560,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/landsukhumvit55-4rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landsukhumvit55-4rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-            <!-- PLOT 2 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-patong-4rai.jpeg" alt="Patong CBD Development Site" onerror="this.src='https://images.unsplash.com/photo-1512343881477-94578b9b4a24?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 2: Patong CBD</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Patong, Phuket</li>
-                        <li><strong>Zoning:</strong> Red Zone / Special Commercial Zone</li>
-                        <li><strong>Advantage:</strong> Prime Corner Plot with extensive frontage on two major roads</li>
-                    </ul>
-                    <div class="price-tag">THB 2,500,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/landpatong-4rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landpatong4rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-            <!-- PLOT 3 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-kamala-3260-rai.jpeg" alt="Premium Residential Site Kamala" onerror="this.src='https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 3: Kamala Sea View</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Kamala Beach, Phuket</li>
-                        <li><strong>Advantage:</strong> Elevated land with permanent sea views</li>
-                    </ul>
-                    <div class="price-tag">THB 80,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/land-kamala-patong-3-rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landkamala3rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-            <!-- PLOT 4 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-patong-2rai.jpeg" alt="Premium CBD Commercial Site" onerror="this.src='https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 4: Patong Commercial</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Patong, Phuket</li>
-                        <li><strong>Advantage:</strong> Prime CBD close proximity to the new Phuket Expressway</li>
-                    </ul>
-                    <div class="price-tag">THB 1,000,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/land-patongphuket-2rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landpatong2rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-            <!-- PLOT 5 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-cm-38-rai.jpeg" alt="Holistic Wellness Land" onerror="this.src='https://images.unsplash.com/photo-1549880181-59a44fc5a46f?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 5: Holistic Wellness</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Hang Dong, Chiangmai</li>
-                        <li><strong>Advantage:</strong> Mountain and River View, Big Ozone-Clean Air</li>
-                    </ul>
-                    <div class="price-tag">THB 125,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/landchiangmai-38rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landchiangmai-38rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-            <!-- PLOT 6 -->
-            <article class="card">
-                <div class="card-image-wrapper">
-                    <img src="land-patong-5rai.jpeg" alt="Residential and Life Style Site" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop';">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">📍 Plot 6: Patong Sea View</h3>
-                    <ul class="card-details">
-                        <li><strong>Location:</strong> Patong, Phuket</li>
-                        <li><strong>Advantage:</strong> Surrounded by luxury high-end villa projects</li>
-                    </ul>
-                    <div class="price-tag">THB 500,000,000</div>
-                </div>
-                <div class="card-actions" style="padding: 0 20px 25px;">
-                    <a href="https://joecollection.github.io/landpatong-5rai/" target="_blank" class="btn btn-outline">📊 Financial Report</a>
-                    <a href="landpatong5rai.pdf" target="_blank" class="btn btn-solid">📥 Download Pitch Deck</a>
-                </div>
-            </article>
-
-        </div>
-
-        <!-- SECTION: CONTACT & INQUIRIES -->
-        <section class="contact-section">
-            <h2 class="contact-title">Confidential Inquiries & Private Viewings</h2>
-            <p style="color: #ddd; margin-bottom: 20px; font-size: 14px;">To request the full Information Memorandum (IM), financial statements, or to schedule a private, confidential on-site inspection, please contact:</p>
-            
-            <div class="contact-info">
-                <p><span>Investment Relations:</span> Monthon Mahakijdumrongnukul</p>
-                <p><span>Mobile / WhatsApp:</span> <a href="tel:+66806578387">+6680-657-8387</a></p>
-                <p><span>Email:</span> <a href="mailto:joecollection.m@gmail.com">joecollection.m@gmail.com</a></p>
-                <p><span>Line ID / WeChat:</span> +6680-657-8387</p>
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-thonglo-4rai.jpeg" alt="Plot 1: Sukhumvit 55 CBD" onerror="this.src='https://images.unsplash.com/photo-1541881512402-fa320c2d3345?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 1: Sukhumvit 55 CBD</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Sukhumvit 55 Thong Lo Soi 29</li>
+              <li><strong>Zoning:</strong> Brown Zone / FAR 8 / High-Density Residential</li>
+              <li><strong>Frontage:</strong> 63 Meters along Sukhumvit 55 Road</li>
+            </ul>
+            <div class="plot-price">THB 2,560,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/landsukhumvit55-4rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landsukhumvit55-4rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
             </div>
-        </section>
+          </div>
+        </div>
 
-    </main>
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-patong-4rai.jpeg" alt="Plot 2: Patong CBD" onerror="this.src='https://images.unsplash.com/photo-1512343881477-94578b9b4a24?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 2: Patong CBD</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Patong Phuket</li>
+              <li><strong>Zoning:</strong> Red Zone / Special Commercial Zone</li>
+              <li><strong>Advantage:</strong> Prime Corner Plot with extensive frontage on two major roads</li>
+            </ul>
+            <div class="plot-price">THB 2,500,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/landpatong-4rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landpatong4rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-kamala-3260-rai.jpeg" alt="Plot 3: Kamala Sea View" onerror="this.src='https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 3: Premium Residential Site</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Kamala Beach Phuket</li>
+              <li><strong>Advantage:</strong> Elevated land with permanent sea views</li>
+            </ul>
+            <div class="plot-price">THB 80,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/land-kamala-patong-3-rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landkamala3rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-patong-2rai.jpeg" alt="Plot 4: Patong CBD" onerror="this.src='https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 4: Premium CBD Commercial</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Patong Phuket</li>
+              <li><strong>Advantage:</strong> Prime CBD close proximity to the new Phuket Expressway</li>
+            </ul>
+            <div class="plot-price">THB 1,000,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/land-patongphuket-2rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landpatong2rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-cm-38-rai.jpeg" alt="Plot 5: Chiangmai" onerror="this.src='https://images.unsplash.com/photo-1549880181-59a44fc5a46f?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 5: Holistic Wellness Land</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Hang Dong Chiangmai</li>
+              <li><strong>Advantage:</strong> Mountain and River View, Big Ozone-Clean Air</li>
+            </ul>
+            <div class="plot-price">THB 125,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/landchiangmai-38rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landchiangmai-38rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="plot-card">
+          <div class="plot-image-wrapper">
+            <img src="land-patong-5rai.jpeg" alt="Plot 6: Patong Sea View" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop';">
+          </div>
+          <div class="plot-content">
+            <h3 class="plot-title">Plot 6: Residential & Lifestyle Site</h3>
+            <ul class="plot-specs">
+              <li><strong>Location:</strong> Patong Phuket</li>
+              <li><strong>Advantage:</strong> Surrounded by luxury high-end villa projects</li>
+            </ul>
+            <div class="plot-price">THB 500,000,000</div>
+            <div class="plot-actions">
+              <a href="https://joecollection.github.io/landpatong-5rai/" target="_blank" class="btn-action btn-action-outline">📊 Financial Report</a>
+              <a href="landpatong5rai.pdf" target="_blank" class="btn-action btn-action-solid">📥 Download Pitch Deck</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Secure Communications</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title">Confidential Inquiries & Private Viewings</h2>
+      <p class="section-body" style="text-align: center; max-width: 800px; margin: 0 auto 32px;">To request the full Information Memorandum (IM), financial statements, or to schedule a private, confidential on-site inspection, please contact our principal desk.</p>
+
+      <div class="contact-block">
+        <p class="contact-principal">Investment Relations</p>
+        <h3 class="contact-name">Monthon Mahakijdumrongnukul</h3>
+        <div class="contact-lines">
+          <div class="contact-line">
+            <span class="contact-line-icon">📱</span>
+            <span>Mobile / WhatsApp: <a href="tel:+66806578387">+66 80-657-8387</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-line-icon">📧</span>
+            <span>Email: <a href="mailto:joecollection.m@gmail.com">joecollection.m@gmail.com</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-line-icon">💬</span>
+            <span>Line ID: <a href="https://line.me/ti/p/mgj7OxQfp4" target="_blank">+66 80-657-8387</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comms-grid">
+        <a href="https://wa.me/66806578387" target="_blank" rel="noopener noreferrer" class="btn-comm btn-whatsapp">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.284 1.489 4.968 1.491 5.482 0 9.944-4.461 9.947-9.945.002-2.656-1.03-5.153-2.906-7.03C16.824 1.793 14.322 1.06 11.67 1.06 6.185 1.06 1.72 5.522 1.718 11.008c-.001 1.714.46 3.326 1.346 4.81l-.988 3.605 3.7-.977zm11.667-6.72c-.179-.089-1.055-.52-1.219-.58-.164-.06-.284-.089-.404.09-.119.179-.463.58-.567.699-.104.12-.209.134-.388.045-.179-.089-.757-.279-1.442-.89-.533-.475-.892-1.06-1.997-1.239-.104-.179-.011-.276.079-.365.08-.08.179-.209.269-.314.09-.104.119-.179.179-.299.06-.119.03-.224-.015-.314-.045-.09-.404-.975-.553-1.336-.146-.352-.295-.304-.404-.31-.104-.005-.224-.006-.344-.006-.12 0-.314.045-.478.224-.164.179-.627.612-.627 1.493s.642 1.73.732 1.851c.089.12 1.264 1.93 3.062 2.704.428.184.762.295 1.022.377.43.136.823.117 1.134.07.347-.052 1.054-.43 1.202-.846.149-.417.149-.775.104-.846-.045-.071-.164-.12-.344-.209z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:joecollection.m@gmail.com" class="btn-comm btn-gmail">
+          <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          Email Desk
+        </a>
+        <a href="https://line.me/ti/p/mgj7OxQfp4" target="_blank" rel="noopener noreferrer" class="btn-comm btn-line">
+          <svg viewBox="0 0 24 24"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
+          LINE Secure
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer reveal">
+      <span class="footer-mark">Joe Collection</span>
+      <span class="footer-copy">&copy; 2026 — Private Institutional Capital Network. All Rights Reserved.</span>
+    </footer>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
-
