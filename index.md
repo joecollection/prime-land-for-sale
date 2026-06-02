@@ -61,6 +61,7 @@ layout: default
 For qualified investors, please review the comprehensive analysis and project documentations below:
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landsukhumvit55-4rai/)
+
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landsukhumvit55-4rai.pdf)
 ---
 #### 📍 Plot 2: [Patong CBD Development Site]
@@ -75,6 +76,7 @@ For qualified investors, please review the comprehensive analysis and project do
 For qualified investors, please review the comprehensive analysis and project documentations below:
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landpatong-4rai/)
+
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landpatong4rai.pdf)
 
 ---
@@ -91,6 +93,7 @@ For qualified investors, please review the comprehensive analysis and project do
 ---
 
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-kamala-patong-3-rai/)
+
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landkamala3rai.pdf)
 
 ---
@@ -104,6 +107,7 @@ For qualified investors, please review the comprehensive analysis and project do
 For qualified investors, please review the comprehensive analysis and project documentations below:
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/land-patongphuket-2rai/)
+
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landpatong2rai.pdf)
 
 ---
@@ -119,6 +123,7 @@ For qualified investors, please review the comprehensive analysis and project do
 
 ---
 👉 **[📊 CLICK HERE TO ACCESS CONFIDENTIAL FINANCIAL REPORT](https://joecollection.github.io/landchiangmai-38rai/)
+
 👉 **[📥 CLICK HERE TO DOWNLOAD  PITCH DECK (PDF)](landchiangmai-38rai.pdf)
 
 ---
